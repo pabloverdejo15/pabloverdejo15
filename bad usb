@@ -1,25 +1,15 @@
-from flipper import Flipper
-from time import sleep
-
-def send_notification(message):
-    # Función para enviar una notificación a tu iPhone
-    # Puedes personalizarla según tus preferencias y configuraciones
-
-    # Código para enviar la notificación a tu iPhone
-
-# Inicialización del Flipper Zero
-flipper = Flipper()
-
-# Conexión a tu iPhone (Asegúrate de que tu iPhone esté emparejado previamente)
-iphone_address = "xx:xx:xx:xx:xx:xx"  # Dirección Bluetooth de tu iPhone
-flipper.bluetooth.connect(iphone_address)
-
-# Envío de la nota de hackeo
-message = "Has sido hackeado"
-send_notification(message)
-
-# Desconexión del Flipper Zero
-flipper.bluetooth.disconnect()
-
-# Espera antes de finalizar el script
-sleep(5)
+REM Author: UNC0V3R3D (UNC0V3R3D#8662 on Discord)
+REM Description: Open any website on an iPhone.
+REM Version: 1.0
+REM Category: iPhone
+DELAY 1000
+GUI SPACE
+DELAY 500
+STRING safari
+DELAY 500
+ENTER
+DELAY 1000
+REM Insert your website below :)
+STRING https://es.pornhub.com/view_video.php?viewkey=ph62f3e34b35e1b
+DELAY 500
+ENTER
